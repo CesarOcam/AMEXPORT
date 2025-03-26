@@ -1,0 +1,25 @@
+body{
+    color:black;
+}
+
+.navbar-custom {
+    background-color: #88A4BA; /* Color personalizado */
+}
+
+.icon-custom {
+    background-color: #88A4BA; /* Color personalizado */
+}
+
+.navbar-custom .navbar-brand {
+    color: black; /* Marca de la navbar en blanco */
+}
+
+.card:hover {
+    transform: scale(1.03); /* Agranda la tarjeta ligeramente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la transición */
+}
+
+.card-body, .card-title, .card-text {
+    text-decoration: none; /* Elimina la decoración del texto (como subrayado) */
+}
