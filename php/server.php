@@ -14,6 +14,9 @@ if(isset($_POST['url'])){
     // Desactivar la verificación SSL
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 
+    // Desactivar la verificación de la autenticidad del servidor
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+
     // Ejecutando cURL
     $response = curl_exec($ch);
 
