@@ -17,6 +17,9 @@ if(isset($_POST['url'])){
     // Desactivar la verificación de la autenticidad del servidor
     curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
 
+    // Forzar a usar un algoritmo de cifrado más seguro
+    curl_setopt($ch, CURLOPT_SSL_CIPHER_LIST, 'TLSv1.2');
+
     // Ejecutando cURL
     $response = curl_exec($ch);
 
