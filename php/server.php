@@ -2,27 +2,35 @@
 if(isset($_POST['url'])){
     $url = $_POST['url'];
 
-    // Crear un contexto con la opción de desactivar la verificación SSL
-    $options = [
-        "ssl" => [
-            "verify_peer" => false,
-            "verify_peer_name" => false,
-            "allow_self_signed" => true,
-            "crypto_method" => STREAM_CRYPTO_METHOD_TLSv1_2_CLIENT
-        ]
-    ];
-    
-    // Crear el contexto
-    $context = stream_context_create($options);
-    
-    // Obtener el contenido de la URL
-    $response = file_get_contents($url, false, $context);
+    // Iniciando cURL
+    $ch = curl_init();
 
-    // Verificar si la respuesta fue exitosa
-    if ($response === false) {
-        echo json_encode(['error' => 'Error al obtener el contenido']);
+    // Configurando la URL a la que se va a hacer la solicitud
+    curl_setopt($ch, CURLOPT_URL, $url);
+
+    // Indicamos que queremos el contenido de la página como resultado
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+    // Desactivar la verificación SSL
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+
+    // Desactivar la verificación de la autenticidad del servidor
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+
+    // Forzar a usar un algoritmo de cifrado más seguro
+    curl_setopt($ch, CURLOPT_SSL_CIPHER_LIST, 'TLSv1.2');
+
+    // Ejecutando cURL
+    $response = curl_exec($ch);
+
+    // Verificando si hubo algún error con la solicitud
+    if(curl_errno($ch)){
+        echo json_encode(['error' => curl_error($ch)]);
     } else {
         echo json_encode(['content' => $response]);
     }
+
+    // Cerrando la conexión cURL
+    curl_close($ch);
 }
 ?>
