@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="lib/bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
     <title>Portal AMEXPORT</title>
@@ -14,16 +15,11 @@
 <body>
     <!-- Barra de navegación oscura -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">PORTAL AMEXPORT</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="https://ejemplo.com" aria-label="Search">
-                <button class="btn btn-secondary" type="submit">Search</button>
-            </form>
         </div>
     </nav>
 
@@ -37,34 +33,32 @@
                             <!-- Seccion 1 -->
                             <div class="col-6">
                                 <!-- Card -->
-                                <a href="" style="text-decoration: none;">
-                                    <div class="card mb-3 " style="max-width: 540px;">
+                                <a href="https://smartport.com.mx/Tracing" target="_blank" style="text-decoration: none;">
+                                    <div class="card mb-3 border shadow" style="max-width: 540px;">
                                         <div class="row g-0">
-                                            <div class="col-md-4 d-flex justify-content-center align-items-center icon-custom">
-                                                <!-- Ícono en lugar de la imagen -->
-                                                <i class="fas fa-globe fa-5x"></i><!-- Puedes cambiar "fa-heart" por el ícono que desees -->
+                                            <div class="col-md-4 d-flex justify-content-center align-items-center icon-custom ps-1">
+                                                <img src="img/icave_Logo.png" class="img-fluid w-100 h-100" alt="">
                                             </div>
-                                            <div class="col-md-8">
+                                            <div class="col-md-8 d-flex justify-content-center align-items-center">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">URL</h5>
-                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                    <h5 class="card-title">smarport.com.mx</h5>
+                                                    <p class="card-text"></p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                  </a>
                                 <!-- Card -->
-                                <a href="" style="text-decoration: none;">
-                                    <div class="card mb-3" style="max-width: 540px;">
+                                <a href="https://grupocice.com/consultaspublicas/consultas_tmu_siglas.php" target="_blank" style="text-decoration: none;">
+                                    <div class="card mb-3 border shadow" style="max-width: 540px;">
                                         <div class="row g-0">
-                                            <div class="col-md-4 d-flex justify-content-center align-items-center icon-custom">
-                                                <!-- Ícono en lugar de la imagen -->
-                                                <i class="fas fa-globe fa-5x"></i><!-- Puedes cambiar "fa-heart" por el ícono que desees -->
+                                            <div class="col-md-4 d-flex justify-content-center align-items-center icon-custom ps-1">
+                                                <img src="img/cice_Logo.png" class="img-fluid w-100 h-100" alt="">
                                             </div>
-                                            <div class="col-md-8">
+                                            <div class="col-md-8 d-flex justify-content-center align-items-center">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">URL</h5>
-                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                    <h5 class="card-title">grupocice.com</h5>
+                                                    <p class="card-text"></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -72,34 +66,32 @@
                                  </a>
                                 <!-- Card -->
                                                                  <!-- Card -->
-                                <a href="" style="text-decoration: none;">
-                                    <div class="card mb-3 " style="max-width: 540px;">
+                                <a href="http://contecon.mx/trazabilidad-de-carga" target="_blank" style="text-decoration: none;">
+                                    <div class="card mb-3 border shadow" style="max-width: 540px;">
                                         <div class="row g-0">
-                                            <div class="col-md-4 d-flex justify-content-center align-items-center icon-custom">
-                                                <!-- Ícono en lugar de la imagen -->
-                                                <i class="fas fa-globe fa-5x"></i><!-- Puedes cambiar "fa-heart" por el ícono que desees -->
+                                            <div class="col-md-4 d-flex justify-content-center align-items-center icon-custom ">
+                                                <img src="img/contenco.png" class="img-fluid w-100 h-100 border rounded" alt="">
                                             </div>
-                                            <div class="col-md-8">
+                                            <div class="col-md-8 d-flex justify-content-center align-items-center">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">URL</h5>
-                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                    <h5 class="card-title">contecon.mx</h5>
+                                                    <p class="card-text"></p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                  </a>
                                 <!-- Card -->
-                                <a href="" style="text-decoration: none;">
-                                    <div class="card mb-3" style="max-width: 540px;">
+                                <a href="https://sapamexport.grupoamexport.com/Inicio/app_Login/" target="_blank" style="text-decoration: none;">
+                                    <div class="card mb-3 border shadow" style="max-width: 540px;">
                                         <div class="row g-0">
-                                            <div class="col-md-4 d-flex justify-content-center align-items-center icon-custom">
-                                                <!-- Ícono en lugar de la imagen -->
-                                                <i class="fas fa-globe fa-5x"></i><!-- Puedes cambiar "fa-heart" por el ícono que desees -->
+                                            <div class="col-md-4 d-flex justify-content-center align-items-center icon-custom ps-1">
+                                                <img src="img/logo_Amexport.png" class="img-fluid w-100 h-100" alt="">
                                             </div>
-                                            <div class="col-md-8">
+                                            <div class="col-md-8 d-flex justify-content-center align-items-center">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">URL</h5>
-                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                    <h5 class="card-title">sapamexport.com</h5>
+                                                    <p class="card-text"></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -111,69 +103,64 @@
                             <!-- Seccion 2 -->
                             <div class="col-6">
                                 <!-- Card -->
-                                <a href="" style="text-decoration: none;">
-                                    <div class="card mb-3" style="max-width: 540px;">
+                                <a href="https://pecem.mat.sat.gob.mx/app/qr/ce/faces/pages/mobile/validadorqr.jsf?D1=16&D2=1&D3=126446427" target="_blank" style="text-decoration: none;">
+                                    <div class="card mb-3 border shadow" style="max-width: 540px;">
                                         <div class="row g-0">
-                                            <div class="col-md-4 d-flex justify-content-center align-items-center icon-custom">
-                                                <!-- Ícono en lugar de la imagen -->
-                                                <i class="fas fa-globe fa-5x"></i><!-- Puedes cambiar "fa-heart" por el ícono que desees -->
+                                            <div class="col-md-4 d-flex justify-content-center align-items-center icon-custom ps-1">
+                                                <img src="img/logo_Amexport.png" class="img-fluid w-100 h-100" alt="">
                                             </div>
-                                            <div class="col-md-8">
+                                            <div class="col-md-8 d-flex justify-content-center align-items-center">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">URL</h5>
-                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                    <h5 class="card-title">SAT</h5>
+                                                    <p class="card-text"></p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                  </a>
                                 <!-- Card -->
-                                 <a href="" style="text-decoration: none;">
-                                    <div class="card mb-3" style="max-width: 540px;">
+                                <a href="https://sapamexport.grupoamexport.com/Inicio/app_Login/" target="_blank" style="text-decoration: none;">
+                                    <div class="card mb-3 border shadow" style="max-width: 540px;">
                                         <div class="row g-0">
-                                            <div class="col-md-4 d-flex justify-content-center align-items-center icon-custom">
-                                                <!-- Ícono en lugar de la imagen -->
-                                                <i class="fas fa-globe fa-5x"></i><!-- Puedes cambiar "fa-heart" por el ícono que desees -->
+                                            <div class="col-md-4 d-flex justify-content-center align-items-center icon-custom ps-1">
+                                                <img src="img/logo_Amexport.png" class="img-fluid w-100 h-100" alt="">
                                             </div>
-                                            <div class="col-md-8">
+                                            <div class="col-md-8 d-flex justify-content-center align-items-center">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">URL</h5>
-                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                    <h5 class="card-title">Sitio Disponible</h5>
+                                                    <p class="card-text"></p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                  </a>
                                 <!-- Card -->
-                                                                 <!-- Card -->
-                                <a href="" style="text-decoration: none;">
-                                    <div class="card mb-3 " style="max-width: 540px;">
+                                <a href="https://sapamexport.grupoamexport.com/Inicio/app_Login/" target="_blank" style="text-decoration: none;">
+                                    <div class="card mb-3 border shadow" style="max-width: 540px;">
                                         <div class="row g-0">
-                                            <div class="col-md-4 d-flex justify-content-center align-items-center icon-custom">
-                                                <!-- Ícono en lugar de la imagen -->
-                                                <i class="fas fa-globe fa-5x"></i><!-- Puedes cambiar "fa-heart" por el ícono que desees -->
+                                            <div class="col-md-4 d-flex justify-content-center align-items-center icon-custom ps-1">
+                                                <img src="img/logo_Amexport.png" class="img-fluid w-100 h-100" alt="">
                                             </div>
-                                            <div class="col-md-8">
+                                            <div class="col-md-8 d-flex justify-content-center align-items-center">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">URL</h5>
-                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                    <h5 class="card-title">Sitio Disponible</h5>
+                                                    <p class="card-text"></p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                  </a>
                                 <!-- Card -->
-                                <a href="" style="text-decoration: none;">
-                                    <div class="card mb-3" style="max-width: 540px;">
+                                <a href="https://sapamexport.grupoamexport.com/Inicio/app_Login/" target="_blank" style="text-decoration: none;">
+                                    <div class="card mb-3 border shadow" style="max-width: 540px;">
                                         <div class="row g-0">
-                                            <div class="col-md-4 d-flex justify-content-center align-items-center icon-custom">
-                                                <!-- Ícono en lugar de la imagen -->
-                                                <i class="fas fa-globe fa-5x"></i><!-- Puedes cambiar "fa-heart" por el ícono que desees -->
+                                            <div class="col-md-4 d-flex justify-content-center align-items-center icon-custom ps-1">
+                                                <img src="img/logo_Amexport.png" class="img-fluid w-100 h-100" alt="">
                                             </div>
-                                            <div class="col-md-8">
+                                            <div class="col-md-8 d-flex justify-content-center align-items-center">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">URL</h5>
-                                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                    <h5 class="card-title">Sitio Disponible</h5>
+                                                    <p class="card-text"></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -187,16 +174,24 @@
 
                     <!--CONTENIDO-->
                     <div class="col-12 col-md-6">
-                        <div class="container-fluid">
+                        <div class="container-fluid text-center">
                             <div class="card2 border rounded p-2 mb-3" style="width: 100%;">
                                 <div class="card-body">
-                                    <h5 class="card-title">Información importante</h5>
-                                    <p class="card-text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eveniet autem nemo minus, consectetur commodi inventore neque non amet perspiciatis dolor dolore impedit harum, nihil dolores ducimus itaque necessitatibus soluta blanditiis optio veritatis deserunt odio, officiis obcaecati? Corrupti alias aspernatur nulla nobis exercitationem non accusamus omnis! Quo, reprehenderit facere. Incidunt, a vitae. Voluptas similique eos quae vel quod iste voluptates quibusdam iure minima aliquam, incidunt impedit consequatur ea esse enim quis quo, excepturi veniam illum minus porro. Cupiditate recusandae sunt, sapiente aspernatur nemo molestias nostrum, aliquid nihil, distinctio ad blanditiis. Aut recusandae accusamus odit adipisci, eius doloribus. Atque expedita a iure laboriosam! Pariatur necessitatibus voluptatum laudantium nisi eos reprehenderit tempora officiis labore, adipisci incidunt laboriosam voluptates natus veniam fugit placeat distinctio cupiditate voluptatem suscipit quod explicabo aut magnam. Dignissimos id eligendi cupiditate et corrupti dolores sit dolore aut, atque perferendis tempore, nesciunt blanditiis sint ut quaerat nemo rem pariatur iste!
-                                    </p>
+                                    <h5 class="card-title mb-5 mt-2">Arrastra aquí la URL o escribela</h5>
+                                    <form id="scraperForm">
+                                        <input 
+                                            class="form-control mb-5" 
+                                            type="text" 
+                                            id="urlInput" 
+                                            placeholder="https://ejemplo.com" 
+                                            required
+                                        >
+                                        <button class="btn btn-secondary" type="button" onclick="scrapear()">Search</button>
+                                    </form>
+                                    <div id="resultado_scrap" style="margin-top: 20px; border: 1px solid #ccc; padding: 20px;"></div>
                                 </div>
                             </div>
-                            <div class="p-3 border rounded">
+                            <!--<div class="p-3 border rounded">
                                 <table class="table table-striped table-hover">
                                     <thead class="text-center">
                                         <tr>
@@ -228,7 +223,7 @@
                                         </tbody>
                                     </thead>
                                 </table>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                     <!--CONTENIDO-->
@@ -240,5 +235,6 @@
 
     <!-- Script -->
     <script src="lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scraping.js"></script>
 </body>
 </html>

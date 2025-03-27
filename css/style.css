@@ -3,11 +3,7 @@ body{
 }
 
 .navbar-custom {
-    background-color: #88A4BA; /* Color personalizado */
-}
-
-.icon-custom {
-    background-color: #88A4BA; /* Color personalizado */
+    background-color: #efefef; /* Color personalizado */
 }
 
 .navbar-custom .navbar-brand {
@@ -23,3 +19,5 @@ body{
 .card-body, .card-title, .card-text {
     text-decoration: none; /* Elimina la decoración del texto (como subrayado) */
 }
+
+
