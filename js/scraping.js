@@ -41,5 +41,7 @@ function scrapear() {
     };
 
     // Envía la URL al servidor
+    console.log("URL enviada: " + url);
     xhr.send("url=" + encodeURIComponent(url));
+
 }
