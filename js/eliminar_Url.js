@@ -26,9 +26,7 @@ $(document).ready(function () {
                     confirmButtonColor: "#28a745"
                 }).then(() => {
                     $("#form_Url_Borrar")[0].reset(); // Limpia el formulario
-                    $("#eliminar_URL").modal("hide"); // Cierra el modal
 
-                    $(".modal-backdrop").remove();
                     $("body").removeClass("modal-open"); // Eliminar la clase que bloquea el scroll
 
                     // Llamar a la función para recargar la tabla

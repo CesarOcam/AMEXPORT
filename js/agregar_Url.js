@@ -28,12 +28,7 @@ $(document).ready(function () {
                 }).then(() => {
                     $("#form_Url")[0].reset(); // Limpia el formulario
 
-                    // Cierra el modal correctamente y destruye cualquier instancia residual
-                    var modal = $("#form_URL");
-                    modal.modal("hide");  // Cierra el modal
-                    modal.on('hidden.bs.modal', function () {
-                    modal.modal('dispose');  // Elimina la instancia del modal
-                    });
+                    $("body").removeClass("modal-open"); // Eliminar la clase que bloquea el scroll
 
                     // Llama a la función para recargar la tabla
                     recargarTabla();
