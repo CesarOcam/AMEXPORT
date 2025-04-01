@@ -10,7 +10,7 @@ function scrapear() {
 
     // Realiza una solicitud AJAX al servidor
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "./php/server.php", true);
+    xhr.open("POST", "../../php/modulos/server.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
     // Cuando la solicitud se complete, maneja la respuesta
