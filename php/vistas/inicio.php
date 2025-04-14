@@ -26,6 +26,10 @@
                 <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#eliminar_URL">
                     <i class="fas fa-trash"></i> Eliminar URL
                 </button>
+
+                <button id="ejecutar" class="btn btn-secondary" type="button" data-bs-target="#consultar_DODA">
+                    <i class="fas fa-search"></i> Consultar DODA
+                </button>
             </div>
         
 
@@ -103,8 +107,7 @@
                     </div>
                        
                         <!-- Tabla URLS -->
-
-                                    <?php include('../../php/modulos/tabla_URL.php') ?>
+                        <?php include('../../php/modulos/tabla_URL.php') ?>
 
                     </div>
                 
@@ -175,6 +178,41 @@
                     </div>
                 </div>
 
+                <!-- Modal de Bootstrap 5 -->
+                <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered"> <!-- Centrado verticalmente -->
+                        <div class="modal-content text-center"> <!-- Centrado el texto -->
+                            <div class="modal-header justify-content-center"> <!-- Centrar contenido del header -->
+                                <h5 class="modal-title" id="errorModalLabel">Sin modulaciones pendientes</h5>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Modal de Bootstrap 5 -->
+                <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="infoModalLabel">Datos Recibidos</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body text-center" id="infoModalBody">
+                                <!-- Aquí se insertarán los datos dinámicamente -->
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
 
             </div>
         </div>
@@ -186,6 +224,7 @@
     <scripta src="../../js/form_Url.js"></script>
     <script src="../../js/agregar_Url.js"></script>
     <script src="../../js/eliminar_Url.js"></script>
+    <script src="../../js/consulta_DODA.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
