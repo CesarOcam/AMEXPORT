@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-include('conexion.php');
+include('conexion2.php');
 
 $url = "https://n8n.agentesamexport.com/webhook/scriptcase-webhook";
 
