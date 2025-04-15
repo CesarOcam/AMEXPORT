@@ -1,6 +1,6 @@
 document.getElementById("ejecutar").addEventListener("click", function () {
-    alert("Esto puede tardar varios minutos. Por favor, no cierres esta ventana.");
-    
+    alert("Esto puede tardar varios minutos.");
+
     fetch("../../php/modulos/webhook_n8n.php") // Llamamos al PHP
         .then(response => {
             if (!response.ok) {
