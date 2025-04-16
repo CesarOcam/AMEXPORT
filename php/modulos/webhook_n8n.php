@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
-$url = "https://n8n.agentesamexport.com/webhook/scriptcase-webhook";
+$url = "https://n8n.agentesamexport.com/webhook-test/scriptcase-webhook";
 
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
