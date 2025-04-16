@@ -26,7 +26,7 @@ document.getElementById("ejecutar").addEventListener("click", function () {
                             <td>${registro.integracion}</td>
                             <td>${registro.oper || "N/A"}</td>
                             <td>${registro.fechaHora || "N/A"}</td>
-                            <td>${registro.pedimento || "N/A"}</td>
+                            <td>${registro.numPedimento || "N/A"}</td>
                             <td>${registro.status || "N/A"}</td>
                         </tr>
                     `;
