@@ -6,7 +6,7 @@ require_once('conexion.php'); // Ajustá esta ruta según tu estructura
 
 // Recoger datos del formulario
 $username = $_POST['email'] ?? '';
-$password = $_POST['pass'] ?? '';
+$password = $_POST['password'] ?? '';
 
 // Buscar al usuario
 $stmt = $pdo->prepare('SELECT * FROM sec_users WHERE email = ?');
@@ -16,6 +16,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
 // Validar contraseña (sin usar hash, comparación directa)
 if ($user && $password === $user['pswd']) {
     $_SESSION['user'] = $user['login'];
+    echo "dashboard.php";
     exit;
 } else {
     echo "Usuario o contraseña incorrectos.";

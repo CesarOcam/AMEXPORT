@@ -22,8 +22,8 @@
                 <input type="email" class="form-control" name="email" id="email" placeholder="usuario@example.com" required>
             </div>
             <div class="mb-3">
-                <label for="pass" class="form-label">Contraseña</label>
-                <input type="pass" class="form-control" name="pass" id="pass" placeholder="******" required>
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="******" required>
             </div>
             <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
         </form>
