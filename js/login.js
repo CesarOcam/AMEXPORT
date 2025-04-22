@@ -4,7 +4,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
 
   const formData = new FormData(this);
 
-  fetch('php/modulos/login.php', {
+  fetch('/portal_web/proyecto_1/php/modulos/login.php', {
     method: 'POST',
     body: formData
   })
