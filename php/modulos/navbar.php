@@ -15,6 +15,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
         <div class="container-fluid">
             <a class="navbar-brand" href="../vistas/inicio.php">PORTAL AMEXPORT</a>
+            <form action="../modulos/logout.php" method="POST">
+                <button class="btn btn-danger" type="submit">Cerrar sesión</button>
+            </form>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

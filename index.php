@@ -15,19 +15,21 @@
 </head>
 <body>
     <div class="login-container">
-        <h3>Iniciar Sesión</h3>
-        <form>
+        <h3>PORTAL AMEXPORT</h3>
+        <form id="loginForm">
             <div class="mb-3">
                 <label for="email" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="usuario@example.com" required>
+                <input type="email" class="form-control" name="email" id="email" placeholder="usuario@example.com" required>
             </div>
             <div class="mb-3">
-                <label for="password" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="password" placeholder="******" required>
+                <label for="pass" class="form-label">Contraseña</label>
+                <input type="pass" class="form-control" name="pass" id="pass" placeholder="******" required>
             </div>
             <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
         </form>
-        <p class="text-center mt-3"><a href="#">¿Olvidaste tu contraseña?</a></p>
+        <div id="respuesta"></div>
     </div>
+
+    <script src="js/login.js"></script>
 </body>
 </html>

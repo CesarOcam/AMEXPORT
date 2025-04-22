@@ -12,7 +12,7 @@ try {
     // Configurar el modo de error de PDO a excepción
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    echo "Conexión exitosa";
+    //echo "Conexión exitosa";
     
     // Si la conexión es exitosa, puedes imprimir este mensaje
     //echo "Conexión exitosa a la base de datos!";
@@ -21,3 +21,4 @@ try {
     echo "Error de conexión: " . $e->getMessage();
 }
 ?>
+
