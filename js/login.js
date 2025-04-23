@@ -4,14 +4,14 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
 
   const formData = new FormData(this);
 
-  fetch('/portal_web/proyecto_1/php/modulos/login.php', {
+  fetch('/portal_amexport/portal_amexport/php/modulos/login.php', {
     method: 'POST',
     body: formData
   })
   .then(res => res.text())
   .then(data => {
     if (data.includes('dashboard.php')) {
-      window.location.href = '/portal_web/proyecto_1/php/vistas/inicio.php'; // Redirige si login fue exitoso
+      window.location.href = '/portal_amexport/php/vistas/inicio.php'; // Redirige si login fue exitoso
     } else {
       document.getElementById('respuesta').innerHTML = data; // Muestra error
     }
