@@ -4,7 +4,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
 
   const formData = new FormData(this);
 
-  fetch('/portal_amexport/portal_amexport/php/modulos/login.php', {
+  fetch('/portal_amexport/php/modulos/login.php', {
     method: 'POST',
     body: formData
   })
