@@ -1,4 +1,8 @@
 <?php
+// Aumentar el tiempo de espera máximo (por ejemplo, 300 segundos = 5 minutos)
+ini_set('max_execution_time', 300);
+set_time_limit(300);
+
 header('Content-Type: application/json');
 
 $url = "https://n8n.agentesamexport.com/webhook/scriptcase-webhook";
@@ -27,7 +31,3 @@ if (json_last_error() !== JSON_ERROR_NONE) {
 } else {
     echo json_encode($json);
 }
-
-
-
-

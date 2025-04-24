@@ -132,6 +132,14 @@ if (!isset($_SESSION['user'])) {
                             </form>
                             <div id="resultado_scrap" class="mt-4" style="border: 1px solid #ccc; padding: 20px;"></div>
                         </div>
+                        <!-- Añadir -->
+                        <div id="loadingSpinner" class="text-center my-4" style="display: none;">
+                            <div class="spinner-border text-secondary" role="status" style="width: 3rem; height: 3rem;">
+                                <span class="visually-hidden">Cargando...</span>
+                            </div>
+                            <p class="mt-2">Consultando DODA, por favor espere...</p>
+                        </div>
+                        <!-- Añadir -->
                     </div>
                 </div>
 
@@ -193,7 +201,7 @@ if (!isset($_SESSION['user'])) {
                     <div class="modal-dialog modal-dialog-centered"> <!-- Centrado verticalmente -->
                         <div class="modal-content text-center"> <!-- Centrado el texto -->
                             <div class="modal-header justify-content-center"> <!-- Centrar contenido del header -->
-                                <h5 class="modal-title" id="errorModalLabel">Sin modulaciones pendientes</h5>
+                                <h5 class="modal-title" id="errorModalLabel">La página del SAT excedió el tiempo de respuesta</h5> <!-- Añadir -->
                             </div>
                             <div class="modal-footer justify-content-center">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
