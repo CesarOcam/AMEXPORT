@@ -120,7 +120,6 @@ if (!isset($_SESSION['user'])) {
                         <?php include('../../php/modulos/tabla_URL.php') ?>
 
                     </div>
-                
                 <!-- Formulario de Scraping -->
                 <div class="col-md-6">
                     <div class="card2 border rounded p-4 mb-5">

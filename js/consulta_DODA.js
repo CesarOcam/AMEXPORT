@@ -5,7 +5,6 @@ document.getElementById("ejecutar").addEventListener("click", function () {
     // Mostrar spinner y limpiar resultados anteriores
     spinner.style.display = "block";
     resultadoDiv.innerHTML = "";
-    
     // Deshabilitar el botón durante la consulta
     const boton = document.getElementById("ejecutar");
     boton.disabled = true;
@@ -48,7 +47,7 @@ document.getElementById("ejecutar").addEventListener("click", function () {
                 resultadoDiv.innerHTML = htmlContent;
             }
         })
-        .catch(error => {
+        .catch(error => { 
             console.error("Error en la solicitud:", error);
             spinner.style.display = "none";
             var errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
